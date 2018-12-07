@@ -1,0 +1,92 @@
+@media (max-width:1366px) { 
+.skillsblock{
+    flex-direction: column;
+}
+.skills{
+    height: 400px;
+}
+.skillsblock img{
+	display: none;
+}
+.video{	
+    margin-bottom: 0;
+}
+.contact{
+	order:2;
+}
+
+}
+
+/*===============================*/@media (max-width:640px){
+body{
+	overflow-x: hidden;
+} 
+.toggleMenu div{	
+	width: 75px;
+	height: 75px;
+	float: right;
+	background: url(images/btnmenu.png) no-repeat;
+	transition: all 250ms ease-in;
+}
+label.togglemenu{
+	width:100%;
+	height: 75px;
+	right: 0;
+	display: block;
+}
+.logo{
+	position: absolute;
+	left: 20px;
+}
+.logo img{
+	width: 93px;
+	height: 75px;
+}
+ input.toggleMenu:checked + label.toggleMenu{
+	background-color: #ddd;
+ }
+ input.toggleMenu:checked + label.toggleMenu div{ 	
+	background: url(images/btnmenuclose.png) no-repeat;
+ }
+ input.toggleMenu:checked ~ nav{
+ 	width: 100%;
+ 	display: block;  
+	transition: all 250ms ease-in;
+ }
+header nav{
+	background-color: #ddd;
+	position: relative;
+	display: none;
+	width: 0;
+}
+.submenu a{
+	font-size:20px;
+}
+.submenu{
+	margin-left: 100px;
+}
+header .wrapper{
+	display: block;
+	margin:0;
+}
+header li{
+	float:none;
+}
+header li a:hover{
+	color: white;
+}
+.banner{
+	height: 500px;
+}
+.conteiner,.wrapper,.title{
+	width: 100%;
+}
+.numbers .wrapper{
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.form .short{
+    max-width:100%;
+}
+}
+

@@ -1,0 +1,531 @@
+ @font-face {
+    font-family: Montserrat-Medium; 
+    src: url(fonts/Montserrat-Medium.ttf); 
+}
+ @font-face {
+    font-family: NunitoSans-Regular; 
+    src: url(fonts/NunitoSans-Regular.ttf); 
+}
+/*===================================*/
+*{    
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+body
+{
+
+    font: 16px/24px "Montserrat-Medium",Times ,sans-serif;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    background-color: #fff;
+}
+.wrapper{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.title{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 620px;
+    padding:84px 0 50px 0;
+}
+a,a:hover{
+    text-decoration: none;
+}
+
+li{
+	list-style-type:none;
+}
+
+.container{
+	max-width: 1366px;
+	margin:0 auto;
+}
+/*======================================*/
+
+h1{
+    color: #1d1d1d;
+    font-size: 38px;
+    line-height: 48px;
+    letter-spacing: -0.38px;
+}
+h2{
+    color: #191919;
+    font-size: 30px;
+    line-height: 60px;
+    letter-spacing: 0.3px;
+}
+
+p{
+    color: #787878;
+    font-family: "NunitoSans-Regular";
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.08px;
+}
+.monserat{
+    color: black;
+    font-family: Montserrat-Medium;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+header{
+    position: absolute;
+    left:0;
+    right: 0;
+    margin:0 auto;
+}
+.toggleMenu{
+    display: none;
+}
+header .wrapper{
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header li{
+    float: left;
+    margin-left: 30px;
+}
+header li a{  
+    color: #191919;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+	font-size: 12px;
+}
+header li a:hover,footer li a:hover{
+    color: #10c9c3;
+}
+.submenu{
+    display: none;
+    position: absolute;
+}
+.menu li:hover > ul.submenu {
+    display: flex;
+    flex-direction: column;
+}
+.banner{
+    height: 670px;
+    background-color: #e9e9e9;
+}
+.banner .wrapper{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+.banner-info{
+    width: 505px;
+}
+.banner-info p{
+    padding-left: 5px;
+    padding-right: 11px;
+    margin-top: 23px;
+    color: #787878;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.09px;
+}
+.btn{
+    display: inline-block;
+    margin: 34px 0 0 5px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 15px 45px;
+    background-color: #10c9c3;
+    text-align: center;
+}
+.title p{
+    margin-top: 15px;
+}
+.title img{
+
+    margin: 33px 0 50px 0;
+}
+.skillsblock{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    background-color: #f8f9f9;
+    margin-top: -2px;
+}
+.skills{
+    width: 100%;
+    margin: 0 auto; 
+    display: flex;
+    align-items: center;
+}
+.wrapskills{
+    width: 500px;
+    margin:0 auto;
+    padding-left: 15px;   
+}
+.wrapskills p{
+    padding: 20px 0;
+}
+.skillsblock img{
+    margin: 0 auto;
+}
+.side{
+    height: 3px;
+    background-color: #10c9c3;
+}
+.side:nth-of-type(1){
+    width: 375px;
+    border-right: 125px solid #d8d8d8;
+}
+.side:nth-of-type(2){
+    width: 450px;
+    border-right: 50px solid #d8d8d8;
+}
+.side:nth-of-type(3){
+    width: 325px;
+    border-right: 175px solid #d8d8d8;
+}
+.numbers{
+    background-color: #10c9c3;
+    height: 240px;
+    display: flex;
+}
+.numbers .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1170px;
+}
+.number{
+    display: flex;
+    justify-content: space-between;
+}
+.number div{
+    margin-left: 25px;
+}
+.number img{
+    height: 36px;
+}
+.number p{
+    font-family: "Montserrat-Medium";
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.number p:nth-of-type(2){
+    letter-spacing: 1.2px;    
+    font-size: 12px;
+}
+.portfolio{
+    display: flex; 
+    flex-wrap:wrap; 
+    justify-content: center; 
+    background-color: #f8f9f9;
+}
+.portfolio a{
+    width:25%;
+    align-items: center;
+}
+.portfolio img{
+    width: 100%;
+}
+.morefoto{
+    padding: 35px 0;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+.morefoto a{
+    margin:0 auto;
+    color: #8e8e8e;
+}
+.video{
+    margin-bottom: 98px;
+}
+.video div{
+    padding-bottom: 49.1%;
+    width: 100%;
+    position: relative;
+}
+.video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+}
+.services{
+    background-color: #f5f5f5;
+    padding: 100px 0 43px 0;
+}
+.services .wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;    
+}
+.service{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 18px;
+    margin-bottom: 50px;
+}
+.service img, .clients img{
+    align-self: center;
+}
+.service .monserat{
+    margin-top: 24px;
+}
+.service p{
+    text-align: center;
+}
+.testimonials{    
+    background-color: #10c9c3;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.block{ /*все изображения справа друг от доруга*/
+    width: 20%;
+    float: left;
+    height: 100%;
+}
+
+.blocks{ /*устанавливает общий размер блока с изображениями*/
+    width: 500%;
+}
+.block div{
+    max-width: 830px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    margin: 0 auto;
+}
+.block div p{
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 20px 20px 10px rgb(0,0,0);
+}
+.block div .slidetext{
+    color: #ffffff;
+    font-family: Montserrat-Medium;
+    font-weight: 500;
+    line-height: 36px;
+    font-size: 24px;
+    letter-spacing: 0.3px; 
+    margin-bottom: 25px;
+}
+.testimonials label{ /*при наведении на стрелки или переключатели - курсор изменится*/
+    cursor: pointer;
+}
+
+.testimonials input{ /*скрывает стандартные инпуты (чекбоксы) на странице*/
+    display: none;
+}
+.slides{    
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    max-width: 1366px;
+}
+/*позиция изображения при активации переключателя*/
+#switch1:checked ~ .slides .blocks{
+    margin-left: 0;
+}
+
+#switch2:checked ~ .slides .blocks{
+    margin-left: -100%;
+}
+
+#switch3:checked ~ .slides .blocks{
+    margin-left: -200%;
+}
+
+#switch4:checked ~ .slides .blocks{
+    margin-left: -300%;
+}
+
+#switch5:checked ~ .slides .blocks{
+    margin-left: -400%;
+}
+
+.controls{ /*положение блока всех управляющих элементов*/
+    position: absolute;
+    margin: 300px 0 0 0;
+    width: 100%;
+    max-width: 1170px;
+}
+
+.active label{ /*стиль отдельного переключателя*/
+    border-radius: 10px; /*скругление углов*/
+    display: inline-block; /*расположение в строку*/
+    width: 10px;
+    height: 10px;
+    background: #b0e8e6;;
+}
+
+.active{ 
+    position: absolute;
+    margin: 420px auto;
+    text-align: center;  
+    width: 100%;
+}
+
+.active label:hover{ /*поведение чекбокса при наведении*/
+    background: #76c8ff;
+    border-color: #777 !important; /*выполнение в любом случае*/
+}
+.controls label:hover{
+    opacity: 0.8;
+}
+
+/*цвет активного лейбла при активации чекбокса*/
+#switch1:checked ~ .active label:nth-child(1),
+#switch2:checked ~ .active label:nth-child(2),
+#switch3:checked ~ .active label:nth-child(3),
+#switch4:checked ~ .active label:nth-child(4),
+#switch5:checked ~ .active label:nth-child(5){
+    background: #fff;
+    width: 15px;
+    height: 15px;
+}
+
+#switch1:checked ~ .controls label:nth-child(5), 
+#switch2:checked ~ .controls label:nth-child(1),
+#switch3:checked ~ .controls label:nth-child(2),
+#switch4:checked ~ .controls label:nth-child(3),
+#switch5:checked ~ .controls label:nth-child(4){
+    background: url('images/prev.png') no-repeat; /*заливка фона картинкой без повторений*/
+    float: left;
+    margin: 0 0 0 40px; /*сдвиг влево*/
+    display: block;
+    height: 68px;
+    width: 68px;
+}
+/*настройка переключения и положения для правой стрелки*/
+#switch1:checked ~ .controls label:nth-child(2), 
+#switch2:checked ~ .controls label:nth-child(3),
+#switch3:checked ~ .controls label:nth-child(4),
+#switch4:checked ~ .controls label:nth-child(5),
+#switch5:checked ~ .controls label:nth-child(1){
+    background: url('images/next.png') no-repeat; /*заливка фона картинкой без повторений*/
+    float: right;
+    margin: 0 40px 0 0; /*сдвиг вправо*/
+    display: block;
+    height: 68px;
+    width: 68px;
+}
+.testimonials .blocks{ /*анимация пролистывания изображений*/
+    transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+.clients{
+    height: 200px;
+    display: flex;
+    justify-content: space-between; 
+}
+.clients img{
+    width:10%;
+}
+.needform{
+    background-color: #f5f5f5; 
+    padding-bottom: 89px;
+}
+.needform .title{
+    padding-bottom: 35px;
+}
+.form{
+    margin:0 auto 10px auto;
+    display: flex;
+    max-width: 670px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+.form .short,.form .long,.form textarea{
+    width: 100%;
+    height: 48px;
+    margin-bottom: 30px;
+    font-family: NunitoSans-Regular;
+    color:  #787878;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    padding-left: 20px;
+}
+.form .short{
+    max-width: 47.7%;
+}
+.form textarea{
+    resize: none;
+    height: 170px;
+    padding-top: 10px;
+}
+input[type="submit"]{
+    width: 180px;
+    height: 54px;
+    background-color: #10c9c3;
+    color: white;
+    margin: 0 auto;
+    border:none;
+}
+footer .container{
+    background-color:  #141414;
+    overflow: hidden;
+}
+footer .wrapper{
+    display: flex;
+    padding: 66px 0 94px 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer p,footer a{
+    font-family: NunitoSans-Regular;
+    color:  #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.piroll,.footermenu,.media,.contact{
+    order:1;
+}
+.piroll{
+    width: 250px;
+}
+.piroll p:first-child{
+    font-family: Montserrat-Medium;
+    color:  #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+}
+.piroll p:nth-of-type(2){
+    padding-top: 20px;
+}
+.footermenu{
+}
+.footermenu nav ul{
+    width: 220px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.footermenu ul li{
+    width:110px;
+}
+.media{
+}
