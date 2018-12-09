@@ -1,0 +1,160 @@
+ @font-face {   
+    font-family: "Helvetica" ; 
+    src: url(fonts/Helvetica.ttf); 
+}
+ @font-face {
+    font-family: "PT Sans";
+    src: url(fonts/PT-Sans-Regular.ttf); 
+}
+ @font-face {
+    font-family: "SegoeUI"; 
+    src: url(fonts/SegoeUI.ttf); 
+}
+ @font-face {
+    font-family: "Segoe UI - Semi Bold"; 
+    src: url(fonts/Segoe-UI-Semibold.ttf); 
+}
+ @font-face {
+    font-family: "Segoe WP";
+    src: url(fonts/Segoe-WP-bold.ttf); 
+}
+ @font-face {
+    font-family: "Sofia Pro Light";
+    src: url(fonts/Sofia-Pro-Light.ttf); 
+}
+
+/*===================================*/
+*{    
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+body
+{
+
+    background: url(images/background.png);
+}
+a,a:hover{
+    text-decoration: none;
+}
+
+li{
+    list-style-type:none;
+}
+.wrapper{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.wrapp{
+    max-width: 100%;
+    padding-left: 50px;
+}
+h1{
+    color: #545454;
+    font-family: "Segoe UI - Semi Bold";
+    font-size: 38px;
+    font-weight: 600;
+}
+/*======================================*/
+.content{
+    max-width: 1000px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: row;
+    background: url(images/blogbg.png);
+    overflow: hidden;
+
+}
+.sidebar{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 282px;
+    text-align: center;
+    overflow: hidden;
+    
+}
+.sidebar img{
+    align-self: center;
+    margin-top: 18px;
+}
+.menu{
+    margin-top:42px;
+}
+.menu ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    float: right;
+}
+.menu li{
+    height: 44px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.menu li:hover{
+    background-color: #6dbad6;
+    color:white;
+}
+.menu li a{
+    color: #7e7d7e;
+    font-family: "Segoe WP";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    text-transform: uppercase;
+    letter-spacing: -0.4px;
+}
+.menu li:hover >a{
+    color:white;
+}
+.home div{
+    background: url(images/homeblack.png);
+}
+.home:hover >a>div {
+   background: url(images/homewhite.png);
+}
+.strip div{
+    background: url(images/stripblack.png);
+}
+.strip:hover >a>div {
+   background: url(images/stripwhite.png);
+}
+.pic div{
+    background: url(images/picblack.png);
+}
+.pic:hover >a>div {
+   background: url(images/picwhite.png);
+}
+.papers div{
+    background: url(images/papersblack.png);
+}
+.papers:hover >a>div {
+   background: url(images/paperswhite.png);
+}
+.menu a div{
+    height: 27px;
+    width: 27px;
+    float: left;
+    margin: 0 14px;
+}
+
+.blog{
+    height: 1000px;
+    max-width: 718px;
+    width: 71,8%;
+    margin:0 auto;
+    overflow: hidden;
+}
+.top{
+    width: 1000px;
+    background-color: #6dbad6;
+    height: 7px;
+}
