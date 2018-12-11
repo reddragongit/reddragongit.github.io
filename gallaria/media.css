@@ -1,4 +1,4 @@
-@media (max-width: 1750px){
+@media (max-width: 750px){
 .content{
 	flex-direction: column;
 	}
@@ -16,29 +16,26 @@
 	height: 0;
 	margin-top: 50px;
 }
-input.togglemenu{
-	display: none;
-}
-.toggleMenu div{
+.toggle-menu div{
 	width: 50px;
 	height: 50px;
 	background: url(images/btnmenu.png) no-repeat;
 	float: right;
 }
-label.toggleMenu{
+label.toggle-menu{
     background-color: #6dbad6;
     position: fixed;
     width: 100%;
     margin-bottom: 50px;
     z-index: 2;
 }
- input.toggleMenu:checked ~ .sidebar{
+ input.toggle-menu:checked ~ .sidebar{
     -webkit-transform: none;
     transform: none;
   	transition: transform 300ms linear;
   	position: absolute;
  } 
- input.toggleMenu:checked ~ .blog{
+ input.toggle-menu:checked ~ .blog{
  }
 }
 

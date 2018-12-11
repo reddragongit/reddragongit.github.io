@@ -71,6 +71,9 @@ h2{
     overflow: hidden;
 
 }
+input.toggle-menu{
+    display: none;
+}
 .sidebar{
     background-color: white;
     display: flex;
