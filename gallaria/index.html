@@ -1,46 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<script language="php">
-  			 header ("Last-Modified: " . date("D, d M Y H:i:s", time()) . " GMT");
-		</script>
-		<meta name="viewport" content="width=device-width, initial-scale=0.5">
-		<title>Gallaria</title>
-		<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" type="text/css" href="style.css" />
-		<link rel="stylesheet" type="text/css" href="media.css" />
-	</head>
+<head>
+	<meta charset="utf-8">
+	<script language="php">
+		header ("Last-Modified: " . date("D, d M Y H:i:s", time()) . " GMT");
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+	<title>Gallaria</title>
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="media.css" />
+</head>
 <body>
 	<div class="content">
+		<input type="checkbox" name="toggle" id="menu" class="toggleMenu">
+		<label for="menu" class="toggleMenu">
+			<div></div>
+		</label> 
 		<div class="sidebar">
-			<img src="images/logo.png" alt="">
-			<img src="images/Gallaria.png" alt="">
-			<div class="wrapp">
-				<div class="menu">
-					<nav>
-						<ul>
-							<li class="home"><a href="#"><div></div>Home</a></li>
-							<li class="strip"><a href="#"><div></div>Videos</a></li>
-							<li class="pic"><a href="#"><div></div>Images</a></li>
-							<li class="papers"><a href="#"><div></div>Articles</a></li>
-							<li class="papers"><a href="#"><div></div>Freebies</a></li>
-						</ul>
-					</nav>
+			<img class="logo" src="images/logo.png" alt="">
+			<img class="logo"src="images/Gallaria.png" alt="">
+			<div class="wrapp">					
+				<ul class="menu">
+					<li class="home hover-bg"><a href="#"><div></div>Home</a></li>
+					<li class="strip hover-bg"><a href="#"><div></div>Videos</a></li>
+					<li class="pic hover-bg"><a href="#"><div></div>Images</a></li>
+					<li class="papers hover-bg"><a href="#"><div></div>Articles</a></li>
+					<li class="papers hover-bg"><a href="#"><div></div>Freebies</a></li>
+				</ul>			
+				<div class="about">
+					<h2>About Us</h2>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
 				</div>
-				<div class="about"></div>
-				<div class="tags"></div>
+				<div class="tags">
+					<div class="title">						
+						<img src="images/tags.png" alt="">
+						<p>Tags</p>
+					</div>
+					<div class="cont">
+						<a class="hover-bg" href="#">clarendon</a>
+						<a class="hover-bg" href="#">gingham</a>
+						<a class="hover-bg" href="#">moon</a>
+						<a class="hover-bg" href="#">lark</a>
+						<a class="hover-bg" href="#">reyes</a>
+						<a class="hover-bg" href="#">juno</a>
+						<a class="hover-bg" href="#">slumber</a>
+						<a class="hover-bg" href="#">crema</a>
+						<a class="hover-bg" href="#">ludwig</a>
+						<a class="hover-bg" href="#">aden</a>
+						<a class="hover-bg" href="#">perpetua</a>
+						<a class="hover-bg" href="#">amaro</a>
+						<a class="hover-bg" href="#">mayfair</a>
+						<a class="hover-bg" href="#">rise</a>
+						<a class="hover-bg" href="#">hudson</a>
+						<a class="hover-bg" href="#">valencia</a>
+					</div>
+				</div>
 			</div>
 		</div>
 
 
 		<div class="blog">
 			<div class="top"></div>
-			<h1>Featured Videos</h1>
-			<div class="social"></div>
-			<div class="video"></div>
-			<div class="videotitle"></div>
-			<div class="vievpanel"></div>
+			<div class="headline">
+				<div class="h-title">					
+					<img src="images/camera.png" alt="">
+					<h1>Featured <span>Videos</span></h1>
+				</div>
+				<div class="socials">
+					<a class="social hover-bg" href="#"><div class="twitter"></div></a>
+					<a class="social hover-bg" href="#"><div class="facebook"></div></a>
+					<a class="social hover-bg" href="#"><div class="google"></div></a>
+					<a class="social hover-bg" href="#"><div class="pinterest"></div></a>
+				</div>
+			</div>		
+			<div class="video">
+				<iframe src="https://www.youtube.com/embed/oqHvyr1xXrs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="video-title">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicingelit</p>
+				<div class="video-share-info">
+					<div class="link">
+						<p>70</p>
+						<p>150</p>
+						<a href="#"></a>
+
+					</div>
+				</div>
+			</div>
+			<div class="view-panel"></div>
 			<div class="posts"></div>
 		</div>
 	</div>
@@ -50,87 +98,3 @@
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
-
-
-
-
-<!--
-color: #545454;
-font-family: "Segoe UI - Semi Bold";
-font-size: 38px;
-font-weight: 400;
-
-
-
-
-
-
-
-color: #7e7d7e;
-font-family: "Segoe WP";
-font-size: 20px;
-font-weight: 700;
-line-height: 32px;
-text-transform: uppercase;
-letter-spacing: -0.4px;
-
-
-
-
-
-color: #a3a2a2;
-font-family: "Sofia Pro Light";
-font-size: 18px;
-font-weight: 400;
-
-color: #000000;
-font-family: "Sofia Pro Light";
-font-size: 28px;
-font-weight: 400;
-
-
-
-
-
-color: #959595;
-font-family: "PT Sans";
-font-size: 32px;
-font-weight: 400;
-
-color: #959595;
-font-family: "PT Sans";
-font-size: 18px;
-font-weight: 400;
-line-height: 27px;
-
-color: #959595;
-font-family: "PT Sans";
-font-size: 32px;
-font-weight: 400;
-
-
-color: #727272;
-font-family: "PT Sans";
-font-size: 14px;
-font-weight: 400;
-line-height: 22px;
-
-
-color: #908f8f;
-font-family: "PT Sans";
-font-size: 16px;
-font-weight: 400;
-
-color: #9d9d9d;
-font-family: "PT Sans";
-font-size: 16px;
-font-weight: 400;
-
-
-
-
-color: #8a8889;
-font-family: Helvetica;
-font-size: 11px;
-font-weight: 400;
-line-height: 22px;

@@ -34,7 +34,7 @@
 }
 body
 {
-
+    letter-spacing: -1px;
     background: url(images/background.png);
 }
 a,a:hover{
@@ -48,15 +48,18 @@ li{
 	max-width: 1000px;
 	margin: 0 auto;
 }
-.wrapp{
-    max-width: 100%;
-    padding-left: 50px;
-}
 h1{
     color: #545454;
     font-family: "Segoe UI - Semi Bold";
     font-size: 38px;
     font-weight: 600;
+    letter-spacing: -2px;
+}
+h2{
+    color: #959595;
+    font-family: "PT Sans";
+    font-size: 32px;
+    font-weight: 400;
 }
 /*======================================*/
 .content{
@@ -75,16 +78,21 @@ h1{
     width: 282px;
     text-align: center;
     overflow: hidden;
+    align-items: flex-end;
     
 }
-.sidebar img{
+.logo{
     align-self: center;
     margin-top: 18px;
 }
+.wrapp{
+    max-width: 232px;
+    display: flex;
+    flex-direction: column;
+
+}
 .menu{
     margin-top:42px;
-}
-.menu ul{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -99,9 +107,13 @@ h1{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
-.menu li:hover{
+.hover-bg:hover{
+    color:white;   
     background-color: #6dbad6;
-    color:white;
+     -webkit-transition: ease-out 0.5s;
+     -moz-transition: ease-out 0.5s;
+     -o-transition: ease-out 0.5s;
+     transition: ease-out 0.5s;
 }
 .menu li a{
     color: #7e7d7e;
@@ -110,34 +122,34 @@ h1{
     font-weight: 700;
     line-height: 32px;
     text-transform: uppercase;
-    letter-spacing: -0.4px;
+    letter-spacing: -1.4px;
 }
 .menu li:hover >a{
     color:white;
 }
 .home div{
-    background: url(images/homeblack.png);
+    background: url(images/icons/homeblack.png);
 }
 .home:hover >a>div {
-   background: url(images/homewhite.png);
+   background: url(images/icons/homewhite.png);
 }
 .strip div{
-    background: url(images/stripblack.png);
+    background: url(images/icons/stripblack.png);
 }
 .strip:hover >a>div {
-   background: url(images/stripwhite.png);
+   background: url(images/icons/stripwhite.png);
 }
 .pic div{
-    background: url(images/picblack.png);
+    background: url(images/icons/picblack.png);
 }
 .pic:hover >a>div {
-   background: url(images/picwhite.png);
+   background: url(images/icons/picwhite.png);
 }
 .papers div{
-    background: url(images/papersblack.png);
+    background: url(images/icons/papersblack.png);
 }
 .papers:hover >a>div {
-   background: url(images/paperswhite.png);
+   background: url(images/icons/paperswhite.png);
 }
 .menu a div{
     height: 27px;
@@ -145,7 +157,59 @@ h1{
     float: left;
     margin: 0 14px;
 }
+.about{
+    padding-right: 20px;
+    text-align: left;
+    margin-top: 47px;
+}
+.about p{
+    color: #959595;
+    font-family: "PT Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;   
+    margin-top: 10px;
+}
+.tags{
+    margin-top: 35px;
+    text-align: left;   
+    padding-right: 20px;
+}
+.tags img{
+    margin-left: 7px;
+    float: left;
 
+}
+.tags p{
+    color: #959595;
+    font-family: "PT Sans";
+    font-size: 32px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.cont{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 23px;
+    justify-content: space-between;
+}
+.cont a{
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    background-color: #eaeaea;
+    padding: 2px 8px;
+    margin: 0 0 12px 0;
+    border-radius: 5px;
+    color: #908f8f;
+    font-family: "PT Sans";
+    font-size: 16px;
+    font-weight: 400;
+}
+/*blog=======================*/
 .blog{
     height: 1000px;
     max-width: 718px;
@@ -157,4 +221,124 @@ h1{
     width: 1000px;
     background-color: #6dbad6;
     height: 7px;
+}
+.headline{
+    display: flex;
+    flex-direction: row;
+    margin-top: 24px;
+    width: 100%;
+    padding: 0 5px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+h1 span{    
+    font-weight: 400;
+    font-family: "Segoe UI";
+}
+.headline img{
+    align-self: center;    
+    margin: 0 20px 0 67px;
+}
+.socials{
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row; 
+    margin-right: 8px; 
+    overflow: hidden;  
+}
+.h-title{
+    display: flex;
+}
+.social div {
+    width: 46px;
+    height: 30px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+.social:last-child{
+    border-right:none;
+}
+.twitter{
+    background: center url(images/icons/twitter.png) no-repeat;
+}
+.twitter:hover{
+    background: center url(images/icons/h-twitter.png) no-repeat;
+}
+.facebook{
+    background: center url(images/icons/facebook.png) no-repeat;
+}
+.facebook:hover{
+    background: center url(images/icons/h-facebook.png) no-repeat;
+}
+.google{
+    background: center url(images/icons/google.png) no-repeat;
+}
+.google:hover{
+    background: center url(images/icons/h-google.png) no-repeat;
+}
+.pinterest{
+    background: center url(images/icons/pinterest.png) no-repeat;
+}
+.pinterest:hover{
+    background: center url(images/icons/h-pinterest.png) no-repeat;
+}
+.video{
+    padding-bottom: 45%;
+    width: 93%;
+    position: relative;
+    margin: 37px auto 0 auto;
+}
+.video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.video-title{
+    margin: 7px auto 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    background-color: rgba(0, 0, 0, 0.11);
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    min-height: 27px;
+}
+.video-title p{
+    color: #a3a2a2;
+    font-family: "Sofia Pro Light";
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 5px;
+}
+.link{
+    display: flex;
+    justify-content: row;
+    height: 100%;
+    align-items: center;
+    margin-right: 10px;
+}
+.link p{
+    color: #6bb7d3;
+    font-size: 12px;
+    display: inline-block;
+    width: 32px;
+    text-align: right;
+    margin-right: 16px;
+}
+.link p:nth-of-type(1){
+    background: url(images/link.png) no-repeat;
+}
+.link p:nth-of-type(2){
+    background: url(images/likevideo.png) no-repeat;
+}
+.link a{
+    background: center url(images/share.png) no-repeat;
+    width: 17px;
+    height: 18px;
 }
