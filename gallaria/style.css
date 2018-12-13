@@ -227,7 +227,6 @@ input.toggle-menu{
 /*blog=======================*/
 .blog{
     max-width: 718px;
-    width: 71,8%;
     margin:0 auto;
     overflow: hidden;
 }
@@ -315,7 +314,7 @@ h1 span{
 }
 .video-title{
     margin: 7px auto 0 auto;
-    border: 1px solid rgba(0, 0, 0, 0.11);
+    border: 1px solid #aaa;
     background-color: rgba(0, 0, 0, 0.11);
     width: 93%;
     display: flex;
@@ -332,7 +331,6 @@ h1 span{
 }
 .link{
     display: flex;
-    justify-content: row;
     height: 100%;
     align-items: center;
     margin-right: 10px;
@@ -396,32 +394,11 @@ h1 span{
 .posts-block input.tiles[type="radio"]:checked + label>div {     
     background: center url(images/icons/tiles-check.png) no-repeat;
 }
-
-
-
-
-
 .posts-block input.tiles[type="radio"]:checked ~ .posts>.post {     
     width: 258px;
     flex-direction: column;
     height: auto;
 }
-.posts-block input.tiles[type="radio"]:checked ~ .posts {     
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 label.radio-change:nth-of-type(1){
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -440,7 +417,6 @@ label.radio-change:nth-of-type(2){
     background: center url(images/icons/tiles.png) no-repeat;
     width: 18px;
     height: 18px;
-    float: center;
 }
 .posts{
     display: flex;
