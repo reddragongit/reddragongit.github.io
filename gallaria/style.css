@@ -462,19 +462,19 @@ label.radio-change:nth-of-type(2){
     background: url(images/strip-post.png);
     height: 60px;
     width: 60px;   
-    margin-left: -30px;
+    margin: 74px 0 0 -30px;
     opacity: 0.8;
 }
 .p-video{
     width: 258px;
     height: 208px;
     display: flex;
-    align-items: center;
 }
 .p-v-title{
     display: flex;
     justify-content: flex-end;
     width: 100%;
+    flex-direction: column;
 }
 .p-wrap{
     max-width: 303px;
@@ -510,13 +510,12 @@ label.radio-change:nth-of-type(2){
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4; 
-    max-height: 87px; 
+    -webkit-line-clamp: 3; 
+    max-height: 66px; 
 }
 .video-link{
-    position: absolute;
     height: 30px;
-    width: 31px;  
+    width: 31px;
     background: url(images/next.png);
     align-self: flex-end;
     border-top-left-radius: 30px;
