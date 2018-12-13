@@ -111,7 +111,7 @@ header li a:hover,footer li a:hover{
     position: absolute;
 }
 .submenu li{
-	margin: 5 0 0 0;
+	margin-left:0;
 }
 .menu li:hover > ul.submenu {
     display: flex;
