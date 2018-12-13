@@ -35,8 +35,6 @@ label.toggle-menu{
   	transition: transform 300ms linear;
   	position: absolute;
  } 
- input.toggle-menu:checked ~ .blog{
- }
 }
 
 

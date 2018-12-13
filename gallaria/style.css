@@ -61,6 +61,18 @@ h2{
     font-size: 32px;
     font-weight: 400;
 }
+h3{
+    color: #000000;
+    font-family: "Sofia Pro Light";
+    font-size: 28px;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; 
+    max-height: 77px; 
+}
 /*======================================*/
 .content{
     max-width: 1000px;
@@ -214,7 +226,6 @@ input.toggle-menu{
 }
 /*blog=======================*/
 .blog{
-    height: 1000px;
     max-width: 718px;
     width: 71,8%;
     margin:0 auto;
@@ -344,4 +355,230 @@ h1 span{
     background: center url(images/share.png) no-repeat;
     width: 17px;
     height: 18px;
+}
+/*==========posts=========*/
+.posts-block{
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;  
+    margin:32px auto 0 auto;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.posts-block input.radio-change{
+    display: none;
+}
+.change-p{
+    color: #8b8b8b;
+    font-family: "Sofia Pro Light";
+    font-size: 17px;
+    font-weight: 400;
+    margin-right: 10px;
+}
+.change-p,.radio-change{
+}
+.radio-change{
+    width: 40px;
+    height: 30px;
+    border: 1px solid #a7a7a7;
+    background-color: #d6d6d6;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.posts-block input.radio-change[type="radio"]:checked + label {     
+    background-color: #6dbad6;
+}
+.posts-block input.table[type="radio"]:checked + label>div {     
+    background: center url(images/icons/table-check.png) no-repeat;
+}
+.posts-block input.tiles[type="radio"]:checked + label>div {     
+    background: center url(images/icons/tiles-check.png) no-repeat;
+}
+
+
+
+
+
+.posts-block input.tiles[type="radio"]:checked ~ .posts>.post {     
+    width: 258px;
+    flex-direction: column;
+    height: auto;
+}
+.posts-block input.tiles[type="radio"]:checked ~ .posts {     
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+label.radio-change:nth-of-type(1){
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+label.radio-change:nth-of-type(2){
+    border-left:none;    
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.table div{
+    background: center url(images/icons/table.png) no-repeat;
+    width: 18px;
+    height: 18px;
+}
+.tiles div{
+    background: center url(images/icons/tiles.png) no-repeat;
+    width: 18px;
+    height: 18px;
+    float: center;
+}
+.posts{
+    display: flex;
+    flex-wrap: wrap;  
+    width: 100%;  
+    margin-bottom: 17px;
+    justify-content: space-between;
+}
+.post{
+    width: 100%;
+    height: 208px;
+    background: #fff;
+    margin: 27px 0 27px 0;
+    display: flex;
+
+}
+.p-left-img{
+    position: absolute;
+    background: url(images/strip-post.png);
+    height: 60px;
+    width: 60px;   
+    margin-left: -30px;
+    opacity: 0.8;
+}
+.p-video{
+    width: 258px;
+    height: 208px;
+    display: flex;
+    align-items: center;
+}
+.p-v-title{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.p-wrap{
+    max-width: 303px;
+    margin: 0 auto;
+}
+.status{
+    display: flex;
+    flex-direction:row;
+    margin-top: 8px;
+    border-bottom: double 3px #eee;
+    min-width: 150px;
+}
+.status img{
+    align-self: center;
+    margin-left: 15px;
+}
+.status p{
+    color: #727272;
+    font-family: Helvetica;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 22px;  
+    margin-left: 3px;
+}
+.v-info{
+    margin-top: 5px;
+    color: #727272;
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;  
+     overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; 
+    max-height: 87px; 
+}
+.video-link{
+    position: absolute;
+    height: 30px;
+    width: 31px;  
+    background: url(images/next.png);
+    align-self: flex-end;
+    border-top-left-radius: 30px;
+}
+/*==========footer=======*/
+footer{
+    background: #fff;
+    max-width: 945px;
+    padding: 21px 20px 15px 35px;
+    margin: 10px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer p{
+    color: #9d9d9d;
+    font-family: "PT Sans";
+    font-size: 16px;
+    font-weight: 400;
+}
+.f-menu{
+    display: flex;
+    flex-direction: row;
+}
+.f-menu li{
+    border-right: solid 1px #9d9d9d;
+}
+.f-menu li:last-child{
+    border-right: none;
+}
+.f-menu li a{
+    padding: 0 5px 0 5px;
+    color: #a3a3a3;
+    font-family: "PT Sans";
+    font-size: 16px;
+    font-weight: 400;
+}
+.f-menu li a:first-child{
+    padding-left: 0;
+}
+.footer-socials{
+    display: flex;
+    flex-direction: row;
+}
+.footer-socials a{ 
+    display: block;  
+    width:27px;
+    height: 27px;
+    border-radius: 27px;    
+    margin: 0 10px 0 10px;
+}
+.footer-socials a{
+    box-shadow: 3px 3px 12px #111;
+}
+.footer-socials a:nth-child(1){
+    background: center url(images/f-twitter.png)
+}
+.footer-socials a:nth-child(2){
+    background: center url(images/f-facebook.png)
+}
+.footer-socials a:nth-child(3){
+    background: center url(images/f-pinterest.png)
 }
